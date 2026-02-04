@@ -128,7 +128,34 @@ int main() {
     SuperPoder2 = (long double) população2 + area2 + pib2 + 
     pontosturisticos2 + densidade2 + pibpercap2;
 
-    
+        printf("\n\n");
+
+      // Área para exibição dos dados da cidade
+
+    printf(" CARTA: 1 \n\n");
+    printf(" Estado: %s ", estado1);
+    printf("Codigo: %s \n", codigo1);
+    printf(" Cidade: %s", cidade1);
+    printf(" População: %ld \n", população1);
+    printf(" Area: %.2f km² \n", area1);            
+    printf(" PIB: %.2f bilhões de reais \n", pib1 / 1000000000.0);      //divisão pra abeviar o valor na impressão
+    printf(" Numero de pontos turisticos: %d \n", pontosturisticos1);
+    printf(" Densidade populacional: %.2f hab/km² \n", densidade1);
+    printf(" PIB per Capita: %.2lf Reais \n", pibpercap1);
+    printf(" Super Poder: %.Lf \n\n", SuperPoder1);
+
+    printf(" CARTA: 2 \n\n");
+    printf(" Estado: %s ", estado2);
+    printf("Codigo: %s \n", codigo2);
+    printf(" Cidade: %s", cidade2);
+    printf(" População: %ld \n", população2);
+    printf(" Area: %.2f km² \n", area2);            
+    printf(" PIB: %.2f bilhões de reais \n", pib2 / 1000000000.0);      //divisão pra abeviar o valor na impressão
+    printf(" Numero de pontos turisticos: %d \n", pontosturisticos2);
+    printf(" Densidade populacional: %.2f hab/km² \n", densidade2);
+    printf(" PIB per Capita: %.2lf Reais \n", pibpercap2);
+    printf(" Super Poder: %.Lf \n\n", SuperPoder2);
+
    printf("\n"); // PULAR UMA LINHA PRA ORGANIZAÇÃO DA IMPRESSÃO
 
    
@@ -143,12 +170,69 @@ int main() {
     //     printf("Cidade 2 tem maior população.\n");
     // }
 
-    // Exibição dos Resultados:
+
+   // Exibição dos Resultados:
     // Após realizar as comparações, exiba os resultados para o usuário.
     // Certifique-se de que o sistema mostre claramente qual carta venceu e com base em qual atributo.
 
     // Exemplo:
     // printf("A cidade vencedora é: %s\n", cidadeVencedora);
 
+     // Comparação das cartas usando a estrutura de decisão if-else
+
+    printf("xxxxx COMPARAÇÃO DAS CARTAS XXXXX\n\n");     
+   
+     if (população1 > população2)
+    {
+        printf("- A População da Carta 1 (São Paulo) venceu!\n");
+    } else {
+        printf("- A População da Carta 2 (Rio de janeiro) venceu!\n");
+    }
+    
+    if (area1 > area2)
+    {
+        printf("- Area da Carta 1 (São Paulo) venceu!\n");
+    } else {
+        printf("- Area da Carta 2 (Rio de janeiro) venceu!\n");
+    }
+    
+    if (pib1 > pib2)
+    {
+        printf("- PIB da Carta 1 (São Paulo) venceu!\n");
+    } else {
+        printf("- PIB da Carta 2 (Rio de janeiro) venceu!\n");
+    }    
+
+    if (pontosturisticos1 > pontosturisticos2)
+    {
+        printf("- Pontos Turisticos da Carta 1 (São Paulo) venceu!\n");
+    } else {
+        printf("- Pontos Turisticos da Carta 2 (Rio de janeiro) venceu\n");
+    }    
+
+    
+    if ( densidade1 < densidade2)
+    {
+        printf("- A densidade populacional da Carta 1 (São Paulo) venceu!\n");
+    } else {
+        printf("- A densidade populacional da Carta 2 (Rio de janeiro) venceu\n");
+    }    
+    
+    if (pibpercap1 > pibpercap2)
+    {
+         printf("- O PIB Percap da Carta 1 (São Paulo) venceu!\n");
+    }  else {
+        printf("- O PIB Percap da Carta 2 (Rio de janeiro) venceu\n");
+    }
+
+    if (SuperPoder1 > SuperPoder2)
+    {
+         printf("- O super poder da Carta 1 (São Paulo) venceu!\n");
+    } else {
+        printf(" - O super poder da Carta 2 (Rio de janeiro) venceu\n\n");
+    }
+  
+    printf ("\n\n");
+    
     return 0;
 }
